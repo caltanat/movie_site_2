@@ -2,6 +2,7 @@ from .models import Country, Director, Actor, Genre, Movie, MovieLanguages
 from modeltranslation.translator import TranslationOptions, register
 
 
+
 @register(Country)
 class CountryTranslationOptions(TranslationOptions):
     fields = ('country_name',)

@@ -3,6 +3,7 @@ from .views import *
 from django.urls import path, include
 
 
+
 router = routers.DefaultRouter()
 router.register(r'actor', ActorViewSet, basename='actor_list'),
 router.register(r'director', DirectorViewSet, basename='director_list'),

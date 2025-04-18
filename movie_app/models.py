@@ -11,6 +11,7 @@ STATUS_CHOICES = (
 )
 
 
+
 class Profile(AbstractUser):
     age = models.PositiveSmallIntegerField(validators=[MinValueValidator(20),
                                                        MaxValueValidator(50)],

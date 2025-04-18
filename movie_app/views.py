@@ -5,6 +5,7 @@ from .models import *
 from .permissions import CheckStatus, CheckUserRating
 
 
+
 class ProfileListAPIView(generics.ListAPIView):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializers

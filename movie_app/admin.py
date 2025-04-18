@@ -3,6 +3,7 @@ from .models import *
 from modeltranslation.admin import TranslationAdmin, TranslationInlineModelAdmin
 
 
+
 class MovieLanguageInline(TranslationInlineModelAdmin, admin.TabularInline):
     model =MovieLanguages
     extra = 1
