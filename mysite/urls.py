@@ -33,7 +33,6 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 
-
 urlpatterns = i18n_patterns (
     path('admin/', admin.site.urls),
     path('', include('movie_app.urls')),
