@@ -1,16 +1,16 @@
-from msvcrt import CRT_ASSEMBLY_VERSION
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.core.validators import MinValueValidator, MaxValueValidator
 from phonenumber_field.modelfields import PhoneNumberField
 
 
+
 STATUS_CHOICES = (
         ('pro', 'pro'),
+
+
         ('simple', 'simple')
 )
-
-
 
 class Profile(AbstractUser):
     age = models.PositiveSmallIntegerField(validators=[MinValueValidator(20),
